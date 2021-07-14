@@ -1,0 +1,4 @@
+<div class="like-widget-container" (appAction)="like()">
+    <fa-icon [icon]="fonts.faThumbsUp" tabindex="0" role="button" size="1x" [attr.aria-describedby]="id"></fa-icon>
+    <span class="like-counter" [attr.id]="id" [attr.aria-label]="likes + ': people liked'" aria-live="true" aria-atomic="true"> {{ likes }}</span>
+</div>

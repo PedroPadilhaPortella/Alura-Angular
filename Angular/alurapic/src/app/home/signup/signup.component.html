@@ -1,0 +1,38 @@
+<h4 class="text-center">Register</h4>
+<form #form="ngForm" [formGroup]="signupForm" class="form mt-4 container" (submit)="signup()">
+    <div class="form-group">
+        <input #inputEmail formControlName="email" class="form-control" placeholder="email" autofocus>
+        <app-vmessage *ngIf="signupForm.get('email').errors?.required && (form.submitted || signupForm.get('email').touched)" text="Email is required!"></app-vmessage>
+        <app-vmessage *ngIf="signupForm.get('email').errors?.email && (form.submitted || signupForm.get('email').touched)" text="Invalid e-mail"></app-vmessage>
+    </div>
+
+    <div class="form-group">
+        <input formControlName="fullName" class="form-control" placeholder="full name">
+        <app-vmessage *ngIf="signupForm.get('fullName').errors?.required && (form.submitted || signupForm.get('fullName').touched)" text="Full name is required!"></app-vmessage>
+        <app-vmessage *ngIf="signupForm.get('fullName').errors?.minlength && (form.submitted || signupForm.get('fullName').touched)" text="Minimum length is 2"></app-vmessage>
+        <app-vmessage *ngIf="signupForm.get('fullName').errors?.maxlength && (form.submitted || signupForm.get('fullName').touched)" text="Maximum length is 40"></app-vmessage>
+    </div>
+
+    <div class="form-group">
+        <input formControlName="userName" class="form-control" placeholder="user name">
+        <app-vmessage *ngIf="signupForm.get('userName').errors?.required && form.submitted" text="Username is required!"></app-vmessage>
+        <app-vmessage *ngIf="signupForm.get('userName').errors?.minlength && (form.submitted || signupForm.get('userName').touched)" text="Minimum length is 2"></app-vmessage>
+        <app-vmessage *ngIf="signupForm.get('userName').errors?.maxlength && (form.submitted || signupForm.get('userName').touched)" text="Maximum length is 30"></app-vmessage>
+        <app-vmessage  *ngIf="signupForm.get('userName').errors?.lowerCase && (form.submitted || signupForm.get('userName').touched)" text="Must be lowercase"></app-vmessage>
+        <app-vmessage *ngIf="signupForm.get('userName').errors?.userNameTaken" text="Username already taken"></app-vmessage>
+        <small *ngIf="signupForm.get('userName').valid" class="text-success">User available</small>
+    </div>
+
+    <div class="form-group">
+        <input formControlName="password" type="password" class="form-control" placeholder="password">
+        <app-vmessage *ngIf="signupForm.get('password').errors?.required && form.submitted" text="Password is required!"></app-vmessage>
+        <app-vmessage *ngIf="signupForm.get('password').errors?.minlength && (form.submitted || signupForm.get('password').touched)" text="Minimum length is 8"></app-vmessage>
+        <app-vmessage *ngIf="signupForm.get('password').errors?.maxlength && (form.submitted || signupForm.get('password').touched)" text="Maximum length is 14"></app-vmessage>
+        <app-vmessage  *ngIf="signupForm.errors?.userNamePassword && signupForm.get('password').touched" text="Username and password must be different"></app-vmessage>
+    </div>
+
+
+    <button [disabled]="signupForm.invalid || this.signupForm.pending" class="btn btn-primary btn-block">Register</button>
+
+    <p class="text-center">Already a user? <a class="btn" [routerLink]="['']">Sign In!</a></p>
+</form>

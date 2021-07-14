@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome Headless 89.0.4389.90 (Windows 10)" package="" timestamp="2021-03-30T07:38:01" id="0" hostname="BRPC003832" tests="18" errors="0" failures="0" time="0.174">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/89.0.4389.90 Safari/537.36"/>
+  </properties>
+  <testcase name="UniqueIdService When a uniqueId is generated 3 times, the getNumberOfGeneratedIds should be 50" time="0.045" classname="Chrome_Headless_89_0_4389_90_(Windows_10).UniqueIdService"/>
+  <testcase name="UniqueIdService Method generateUniqueIdWithPrefix should not generate the duplicated unique id" time="0.003" classname="Chrome_Headless_89_0_4389_90_(Windows_10).UniqueIdService"/>
+  <testcase name="UniqueIdService Method generateUniqueIdWithPrefix should generate a uniqueId and contain the prefix" time="0.002" classname="Chrome_Headless_89_0_4389_90_(Windows_10).UniqueIdService"/>
+  <testcase name="UniqueIdService UniqueIdService should be instantiated --> SMOKE TEST" time="0.002" classname="Chrome_Headless_89_0_4389_90_(Windows_10).UniqueIdService"/>
+  <testcase name="UniqueIdService Method generateUniqueIdWithPrefix should throw an error when called without prefix" time="0.002" classname="Chrome_Headless_89_0_4389_90_(Windows_10).UniqueIdService"/>
+  <testcase name="UniqueIdService Validanting true statements" time="0.003" classname="Chrome_Headless_89_0_4389_90_(Windows_10).UniqueIdService"/>
+  <testcase name="PhotoFrameComponent (D) Should have aria-label with 0 (@Input likes) for default" time="0.035" classname="Chrome_Headless_89_0_4389_90_(Windows_10).PhotoFrameComponent"/>
+  <testcase name="PhotoFrameComponent like should&#xA;    trigger (@Output liked) two times when called outside debounce time" time="0.013" classname="Chrome_Headless_89_0_4389_90_(Windows_10).PhotoFrameComponent"/>
+  <testcase name="PhotoFrameComponent (D) Should display image with src and description when bound to properties" time="0.009" classname="Chrome_Headless_89_0_4389_90_(Windows_10).PhotoFrameComponent"/>
+  <testcase name="PhotoFrameComponent Should create component --> SMOKE TEST" time="0.006" classname="Chrome_Headless_89_0_4389_90_(Windows_10).PhotoFrameComponent"/>
+  <testcase name="PhotoFrameComponent like should trigger (@Output liked) &#xA;    once when called multiple times within debounce time" time="0.006" classname="Chrome_Headless_89_0_4389_90_(Windows_10).PhotoFrameComponent"/>
+  <testcase name="PhotoFrameComponent (D) Should display number of likes when (@Input likes) is incremented" time="0.006" classname="Chrome_Headless_89_0_4389_90_(Windows_10).PhotoFrameComponent"/>
+  <testcase name="PhotoFrameComponent (D) Should update aria-label when likes (@Input likes) is incremented" time="0.008" classname="Chrome_Headless_89_0_4389_90_(Windows_10).PhotoFrameComponent"/>
+  <testcase name="LikeWidgetComponent like should trigger (@Output liked) when called" time="0.008" classname="Chrome_Headless_89_0_4389_90_(Windows_10).LikeWidgetComponent"/>
+  <testcase name="LikeWidgetComponent like should trigger (@Output liked) when called" time="0.01" classname="Chrome_Headless_89_0_4389_90_(Windows_10).LikeWidgetComponent"/>
+  <testcase name="LikeWidgetComponent Should Not auto-generate ID during OnInit when (@Input id) is assigned" time="0.005" classname="Chrome_Headless_89_0_4389_90_(Windows_10).LikeWidgetComponent"/>
+  <testcase name="LikeWidgetComponent Should create component --> SMOKE TEST" time="0.004" classname="Chrome_Headless_89_0_4389_90_(Windows_10).LikeWidgetComponent"/>
+  <testcase name="LikeWidgetComponent Should auto generate ID during OnInit when (@Input id) is not assigned" time="0.007" classname="Chrome_Headless_89_0_4389_90_(Windows_10).LikeWidgetComponent"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
