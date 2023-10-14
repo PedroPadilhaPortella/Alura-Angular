@@ -1,0 +1,16 @@
+{
+  "pensamentos": [
+    {
+      "id": 2,
+      "conteudo": "Estudando React",
+      "autoria": "Pedro Portella",
+      "modelo": "modelo3"
+    },
+    {
+      "id": 3,
+      "conteudo": "Angular é o melhor",
+      "autoria": "Nay",
+      "modelo": "modelo3"
+    }
+  ]
+}
