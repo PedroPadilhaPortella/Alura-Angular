@@ -1,0 +1,14 @@
+{
+  "name": "testes-cypress",
+  "version": "1.0.0",
+  "description": "Cypress: automação de testes E2E",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open",
+    "test:mochawesome": "npx cypress run --reporter mochawesome"
+  },
+  "devDependencies": {
+    "cypress": "^9.1.1",
+    "mochawesome": "^7.1.3"
+  }
+}
